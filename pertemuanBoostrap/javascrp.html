@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Penulisan Javascript</title>
+    <script>
+        // alert("Selamat belajar HTML");
+        // console.log("Hi, ini kode Javascript");
+
+        function sayHello(){
+            alert("Hello");
+        }
+
+        function panggil(){
+            alert("hai");
+        }
+
+        function cetakNama(){
+            var name = "Muhamad Anggi Pratama";
+            confirm(name);
+        }
+
+        function namaSaya(){
+            var name = prompt("Masukan nama anda")
+            alert(name)
+        }
+
+        function urlInput(){
+            var yakin = confirm("GOOO");
+            if (yakin){
+                window.location = "https://www.kompas.com";
+            } else{
+                document.write("DIEM!!")
+            }
+        }
+
+        function aritmatika(){
+            var a = prompt("Masukan nilai a");
+            var b = prompt("Masukan nilai b");
+            var c = "Nilai Awal";
+
+            c = a-b;
+            document.write(`${a} - ${b} = ${c} <br/>`);
+
+            c = a*b;
+            document.write(`${a} x ${b} = ${c} <br/>`);
+
+            c = a**b;
+            document.write(`${a} ** ${b} = ${c} <br/>`);
+
+            c = a/b;
+            document.write(`${a} / ${b} = ${c} <br/>`);
+
+            c = a%b;
+            document.write(`${a} % ${b} = ${c} <br/>`);
+
+        }
+
+        var totalbelanja = prompt("total belanja ?", 0);
+        if(totalbelanja>100000){
+            document.write("<h2>selamat anda dapat hadiah</h2>");
+        }
+
+        document.write("<p>terima kasih sudah berbelanja ditoko kami</p>");
+
+        var password = prompt("password : ");
+
+        if (password == "kopi"){
+        }else{
+            document.write("<p> password salah coba lagi</p>");
+        }
+    </script>
+</head>
+<body>
+    <textarea onkeyup="document.getElementById('counter').innerText = this.value.length"
+    cols="30" rows="10">
+    </textarea>
+    
+    <p>Panjang: <span id="counter">0</span> karakter</p>
+
+    <a href="javascript:urlInput()">Jangan di Klik</a>
+
+    <button onclick="panggil()">panggil</button>
+    <button onclick="sayHello()">Klik AKu!!!!</button>
+    <button onclick="cetakNama()">Nama</button>
+    <button onclick="namaSaya()">cek</button>
+    <button onclick="urlInput()"> TESTING</button>
+    <button onclick="aritmatika()">ARITMATIKA</button>
+
+</body>
+</html>

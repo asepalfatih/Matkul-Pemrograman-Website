@@ -1,0 +1,17 @@
+body{
+    background-image: url(PB.jpg); background-size: 1500px; height: 800px; width: 1000px;
+    background-repeat: no-repeat;
+    
+}
+
+.ukuran_gambar50{
+    height: 50px;
+    width: 50px;
+}
+
+.tulisan_arab{
+    direction: rtl;
+    font-size: 80px;
+    color: rgb(45, 45, 133);
+}
+
